@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/sudio-club.css">
+    </head>
+    <body>
+        <div class="backgroung-studioClub">
+            <div class="wrapper-signup pb-0 pt-3">
+                <nav class="navbar navbar-expand-lg navbar-light event-menu w-100">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">
+                          <img src="image/Studio of Creatives - logo.png" alt="" class="event-logo">
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav event-menuNav ml-auto">
+                          <li class="nav-item">
+                            <a class="nav-link event-menuLink " aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link event-menuLink" href="#">Articles & videos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link event-menuLink active" href="#">Events calendar</a>
+                          </li>
+                        </ul>
+                        <ul class="navbar-nav event-menuNav ml-auto d-flex align-items-lg-center">
+                            <li class="nav-item">
+                              <a class="nav-link event-menuLink" href="#">Help</a>
+                            </li>
+                            <li class="nav-item dropdown d-flex">
+                                
+                              <a class="nav-link event-menuLink dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="image/Ellipse 89.png" alt="">
+                                <span>Jessica Doe</span>
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                      </div>
+                    </div>
+                </nav>
+            </div> 
+        </div>        
+        <div class="wrapper-signup pb-0">
+            <ul class="nav nav-tabs w-100 settings-navBar" id="myTab" role="tablist">
+                <li class="nav-item settings-navItem">
+                    <a class="nav-link settings-navLink active pl-0" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Profile</a>
+                </li>
+                <li class="nav-item settings-navItem">
+                  <a class="nav-link settings-navLink pl-0" id="account-tab" data-toggle="tab" href="#account" role="tab" aria-controls="account" aria-selected="false">Account & preferences</a>
+                </li>
+                <li class="nav-item settings-navItem">
+                  <a class="nav-link settings-navLink pl-0" id="membership-tab" data-toggle="tab" href="#membership" role="tab" aria-controls="membership" aria-selected="false">Membership</a>
+                </li>
+            </ul>
+            <div class="tab-con   tent settings-tabContent w-100 settings-navBar mt-5" id="myTabContent">
+                <div class="tab-pane settings-tabPane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">                
+                  <div class="upload-img__container">
+                    <div class="upload-img__wrapper">
+                      <div class="upload-img__image d-flex justify-content-center align-items-center">
+                        <img src="image/Vector.png" alt="" class="uploadImg">
+                      </div>
+                      <div class="upload-img__content">
+                        <div class="upload-img__icon"><i class="fas fa-user"></i></div>
+                      </div>  
+                    </div>  
+                    <input type="file" id="default-btn" accept="image/png, image/gif, image/jpeg" hidden>
+                    <button id="custom-btn" onclick="defaultBtnActive()">Upload image</button>
+                    <button id="cancel-btn">Delete image</button>
+                  </div>
+                  <p class="membership-title membership-text__weigth mt-4">
+                    The image should be a head and shoulders photo with your face clearly visible, a bit like a passport photo (except it's okay to smile in this one!). This image will be used for your membership card, which you’ll use to prove your membership of The Joy Club at places like restaurants and gyms once it’s safe for us to offer deals outside of the home.
+                  </p>
+                  <button class="studio-signInBtn  col-12 col-sm-6 col-lg-4 col-xl-2 my-4" data-toggle="modal" data-target="#exampleModal">Digital membership ID</button>   
+                  <form action="">
+                    <div class="col-12 col-sm-6 col-lg-4 mb-3 p-0">
+                      <input type="text" class="form-control studio-SignupInput" placeholder="Name">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 mb-3 p-0">
+                      <input type="text" class="form-control studio-SignupInput" placeholder="Surname">
+                    </div> 
+                    <div class="col-12 col-sm-6 col-lg-4 mb-3 p-0 ">
+                      <input placeholder="05/04/2020" type="date" name="checkIn2" id="datepicker2" value="" class="studio-SignupInput calendar pad-calendar">      
+                    </div>  
+                    <div class="col-12 col-sm-6 col-lg-4 mb-3 p-0">
+                      <input type="email" class="form-control studio-SignupInput" placeholder="example@gmail.com">
+                    </div>                  
+                  </form>
+                  <button class="studio-signInBtn  col-12 col-sm-6 col-lg-4 col-xl-2 my-4" data-toggle="modal" data-target="#exampleModal">Save profile changes</button>                                
+                </div>
+                <div class="tab-pane settings-tabPane fade " id="account" role="tabpanel" aria-labelledby="account-tab">
+                    <p class="studio-clubTitle my-4">Change password</p>
+                    <div class="studio-clubForm-pass mb-3 col-12  col-lg-6 p-0">
+                        <input type="password" placeholder="Current password" class="studio-SignupInput" id="studio_settingsPass">
+                        <span>
+                            <i class="far fa-eye" id="toggleEyeSettings" style="cursor: pointer"></i>
+                        </span>
+                    </div>
+                    <div class="studio-clubForm-pass mb-3 col-12  col-lg-6 p-0">
+                        <input type="password" placeholder="New password" class="studio-SignupInput" id="studio_settingsPass2">
+                        <span>
+                            <i class="far fa-eye" id="toggleEyeSettings2" style="cursor: pointer"></i>
+                        </span>
+                    </div>
+                    <div class="studio-clubForm-pass mb-3 col-12  col-lg-6 p-0">
+                        <input type="password" placeholder="Confirm new password" class="studio-SignupInput" id="studio_settingsPass3">
+                        <span>
+                            <i class="far fa-eye" id="toggleEyeSettings3" style="cursor: pointer"></i>
+                        </span>
+                    </div>
+                    <div class="studio-club-buttons d-flex justify-content-between flex-wrap mt-5 ">
+                        <button class="orange-btn mb-4 col-12 col-sm-5">Update passwordn</button>
+                    </div>
+                    <div class="settings-studioBox my-3 d-flex justify-content-between align-items-baseline flex-wrap">
+                        <p class="studio-clubTitle mb-0">Categories of interest</p>
+                        <button class="settings-btn col-sm-3 col-6" data-toggle="modal" data-target="#exampleModal">Update</button>
+                    </div>
+                    <div class="settings-studioBox my-3 d-flex justify-content-between align-items-baseline flex-wrap">
+                        <p class="studio-clubTitle my-3">Communication preferences</p>
+                        <button class="settings-btn col-sm-3 col-6" data-toggle="modal" data-target="#exampleModal1">Update</button>
+                    </div>
+                </div>                
+                <div class="tab-pane settings-tabPane fade" id="membership" role="tabpanel" aria-labelledby="membership-tab">
+                  <p class="studio-clubTitle my-4">Your membership</p>
+                  <div class="d-flex justify-content-xl-between justify-content-center align-items-center flex-wrap">
+                    <div class="settings-membership__leftContent">
+                      <div class="d-flex flex-wrap justify-content-between mb-5">
+                        <div>
+                          <p class="membership-title">Member since</p>
+                          <p class="membership-title membership-text__blue">10 Dec 2021</p>
+                        </div>
+                        <div class="membership-left__info">
+                          <p class="membership-title">Membership type</p>
+                          <div class="membership-type d-flex justify-content-center align-items-center">Premium</div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-wrap justify-content-between">
+                        <div>
+                          <p class="membership-title">Premium membership fee</p>
+                          <p class="membership-title membership-text__blue">£5.00/month</p>
+                        </div>
+                        <div>
+                          <p class="membership-title text-upercase">PREMIUM MEMBERSHIP EXPIRY</p>
+                          <p class="membership-title membership-text__blue">16 Jan 2022</p>
+                          <p class="membership-title membership-text__red">Free trial</p>
+                        </div>
+                        </div>
+                        <div>                          
+                          <p class="membership-title text-upercase">DATE OF NEXT MEMBERSHIP PAYMENT</p>
+                          <div class="memrship-left__wrapper d-flex justify-content-between align-items-center flex-wrap p-4">
+                            <div class="inner-membership__content">
+                              <p class="membership-title">
+                                Upgrade to 
+                                <span class="membership-text__red">
+                                  Premium
+                                </span>
+                              </p>
+                              <p class="membership-title">
+                                To continue to enjoy unlimited FREE access to online member events with Club studio... after your free trial - upgrade today!
+                              </p>
+                            </div>
+                            <div class="membership-upgradeBtn">
+                              <button>Upgrade</button>
+                            </div>
+
+                        </div>
+                        </div>
+                        <div class="my-5">
+                          <p class="membership-title">Deactivate my account</p>
+                          <p class="membership-title membership-text__weigth">
+                            You may choose to deactivate your account with The Joy Club. This will mean that you will lose access to everything that The Joy Club has to offer including all of our Free membership benefits
+                          </p>
+                        </div>
+                        <button class="settings-btn  col-12 col-sm-6 col-lg-4 mb-5" data-toggle="modal" data-target="#exampleModal">Deactivate my account</button>
+
+                    </div>
+                    <div class="settings-membership__rightContent p-5">
+                      <p class="member-right__title">Redeem a <span>gift membership or discount code</span> </p>
+                      <input type="text" name="" id="" placeholder="Enter your code here" class="membership-input">
+                      <button class="studio-signInBtn my-4 mx-auto d-flex justify-content-center align-items-center col-8">Submit code</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- update modal category  / Categories of interest -->
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog category-modalDialog" role="document">
+                  <div class="modal-content category-modalContent">
+                    <div class="modal-header category-modalHeader">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body category-modalBody pt-0">                        
+                      <p class="studio-clubTitle text-center mb-0">Choose your interests...</p>
+                      <div class="">
+                        <button class="stepTwo-preference m-2 " onclick="add_preference(this)" style="background-color: transparent;">Arts and entertainment</button>
+                        <button class="stepTwo-preference m-2 " onclick="add_preference(this)" style="background-color: transparent;">Music</button>
+                        <button class="stepTwo-preference m-2 " onclick="add_preference(this)" style="background-color: transparent;">To write</button>  
+                        <button class="stepTwo-preference m-2 " onclick="add_preference(this)" style="background-color: transparent;">Health</button>
+                        <button class="stepTwo-preference m-2 " onclick="add_preference(this)" style="background-color: transparent;">Food and Drink</button>
+                        <button class="stepTwo-preference m-2 " onclick="add_preference(this)" style="background-color: transparent;">Fashion and Design</button>
+                        <button class="stepTwo-preference m-2 " onclick="add_preference(this)" style="background-color: transparent;">History</button>  
+                    </div>
+                    </div>
+                    <div class="modal-footer category-modalFooter my-4">
+                      <button type="button" class="category-modalBtn col-12 col-sm-3  m-auto">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                <div class="modal-dialog category-modalDialog" role="document">
+                  <div class="modal-content category-modalContent">
+                    <div class="modal-header category-modalHeader">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body category-modalBody pt-0 px-5">                        
+                      <p class="studio-clubTitle text-center mb-0">Communication preferences</p>                      
+                      <form action="#" class="">
+                        <p class="settings-modalText mt-3">Which gender do you identify as?</p>
+                        <div class="d-flex  category-modalForm flex-wrap">
+                            <p class="mb-0 mr-4">
+                                <input type="radio" id="test1" name="radio-group"  class="settings-radioBtn" checked>
+                                <label for="test1" class="settings-labelBtn">Male</label>
+                              </p>
+                              <p class="mb-0 mr-4">
+                                <input type="radio" id="test2" name="radio-group" class="settings-radioBtn">
+                                <label for="test2" class="settings-labelBtn">Female</label>
+                              </p>
+                              <p class="mb-0 mr-4">
+                                <input type="radio" id="test3" name="radio-group" class="settings-radioBtn">
+                                <label for="test3" class="settings-labelBtn">Non-binary</label>
+                              </p>
+                        </div>                        
+                        <p class="settings-modalText mt-3">We will occasionally send you emails regarding your account. We would also like to send you email updates from time to time to highlight exciting news, offers and events from Club Studio. Would you like to receive these email updates from us? You can unsubscribe at any time.</p>
+                        <div class="d-flex category-modalForm flex-wrap">
+                            <p class="mb-0 mr-4">
+                                <input type="radio" id="test4" name="radio-group1"  class="settings-radioBtn" checked>
+                                <label for="test4" class="settings-labelBtn">Yes, please</label>
+                              </p>
+                              <p class="mb-0 mr-4">
+                                <input type="radio" id="test5" name="radio-group1" class="settings-radioBtn">
+                                <label for="test5" class="settings-labelBtn">No, thank you</label>
+                              </p>                            
+                        </div> 
+                        <p class="settings-modalText mt-3">Would you like to receive emails notifying you when other members like or reply to your comments?</p>
+                        <div class="d-flex category-modalForm flex-wrap">
+                            <p class="mb-0 mr-4">
+                                <input type="radio" id="test6" name="radio-group2"  class="settings-radioBtn" checked>
+                                <label for="test6" class="settings-labelBtn">Yes, please</label>
+                              </p>
+                              <p class="mb-0 mr-4">
+                                <input type="radio" id="test7" name="radio-group2" class="settings-radioBtn">
+                                <label for="test7" class="settings-labelBtn">No, thank you</label>
+                              </p>                            
+                        </div> 
+                      </form>                      
+                    </div>
+                    <div class="modal-footer category-modalFooter my-4">
+                      <button type="button" class="category-modalBtn col-12 col-sm-3  m-auto">Update</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="studio-clubFooter mt-5">
+            <div class="d-flex flex-wrap">
+                <div class="studio-footerBox mr-5 my-3">
+                    <p>Explore</p>
+                    <div>
+                        <a href="#">Blog</a>
+                    </div>
+                    <div>
+                        <a href="#">Help</a>
+                    </div>
+                </div>
+                <div class="studio-footerBox mr-5 my-3">
+                    <p>Contuct Us</p>
+                    <div>
+                        <a href="#">studioclub@gmail.com</a>
+                    </div>
+                    <div>
+                        <a href="#">1212 45 5656(10am-5pm)</a>
+                    </div>
+                </div>
+                <div class="studio-footerBox my-3">
+                    <p>Follow Us</p>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25.013" height="25.013" viewBox="0 0 25.013 25.013">
+                                <path id="facebook_9_" data-name="facebook (9)" d="M21.349,0H3.664A3.668,3.668,0,0,0,0,3.664V21.349a3.668,3.668,0,0,0,3.664,3.664h7.377V16.17H8.11v-4.4h2.931V8.794a4.4,4.4,0,0,1,4.4-4.4h4.446v4.4H15.438v2.98h4.446l-.733,4.4H15.438v8.842h5.911a3.668,3.668,0,0,0,3.664-3.664V3.664A3.668,3.668,0,0,0,21.349,0Zm0,0" fill="#fff"/>
+                            </svg>                              
+                        </a>
+                        <a href="#">
+                            <svg id="instagram_6_" data-name="instagram (6)" xmlns="http://www.w3.org/2000/svg" width="25.576" height="25.576" viewBox="0 0 25.576 25.576">
+                                <path id="Path_255" data-name="Path 255" d="M21.829,0H3.746A3.751,3.751,0,0,0,0,3.746V21.829a3.751,3.751,0,0,0,3.746,3.746H21.829a3.751,3.751,0,0,0,3.746-3.746V3.746A3.751,3.751,0,0,0,21.829,0ZM12.838,19.482a6.744,6.744,0,1,1,6.744-6.744A6.751,6.751,0,0,1,12.838,19.482ZM20.331,7.493a2.248,2.248,0,1,1,2.248-2.248A2.25,2.25,0,0,1,20.331,7.493Zm0,0" fill="#fff"/>
+                                <path id="Path_256" data-name="Path 256" d="M392.749,90a.749.749,0,1,0,.749.749A.75.75,0,0,0,392.749,90Zm0,0" transform="translate(-372.419 -85.504)" fill="#fff"/>
+                                <path id="Path_257" data-name="Path 257" d="M157.245,150a5.245,5.245,0,1,0,5.245,5.245A5.251,5.251,0,0,0,157.245,150Zm0,0" transform="translate(-144.407 -142.507)" fill="#fff"/>
+                            </svg>                              
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30.561" height="25.012" viewBox="0 0 30.561 25.012">
+                                <path id="twitter_5_" data-name="twitter (5)" d="M11.4,25.013a26.223,26.223,0,0,1-4.05-.322,19.008,19.008,0,0,1-5.54-2.016L0,21.685l1.96-.645c2.143-.7,3.447-1.142,5.06-1.826A6.732,6.732,0,0,1,3.56,15.2L3.1,13.82l.374.057a6.8,6.8,0,0,1-.852-1.05A6.447,6.447,0,0,1,1.533,8.993l.086-1.208.723.28a6.764,6.764,0,0,1-.655-1.837,6.991,6.991,0,0,1,.745-4.707L3.062.365,3.9,1.377A15.512,15.512,0,0,0,13.954,7.035a6.011,6.011,0,0,1,.365-3.193A5.979,5.979,0,0,1,16.75,1.055,7.3,7.3,0,0,1,20.987.014a6.768,6.768,0,0,1,4.16,1.716,13.966,13.966,0,0,0,1.523-.508C27,1.1,27.382.953,27.856.79L29.6.189,28.463,3.44c.075-.006.152-.012.233-.015l1.864-.084-1.1,1.506c-.063.086-.079.111-.1.145-.089.134-.2.3-1.712,2.32a2.849,2.849,0,0,0-.533,1.855,17.546,17.546,0,0,1-.958,7.057A12.489,12.489,0,0,1,22.8,21.189a14.807,14.807,0,0,1-7.018,3.393,21.606,21.606,0,0,1-4.383.43Zm0,0" transform="translate(0 0)" fill="#fff"/>
+                            </svg>                              
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26.14" height="26.14" viewBox="0 0 26.14 26.14">
+                                <path id="linkedin_3_" data-name="linkedin (3)" d="M22.311,0H3.829A3.834,3.834,0,0,0,0,3.829V22.311A3.834,3.834,0,0,0,3.829,26.14H22.311a3.834,3.834,0,0,0,3.829-3.829V3.829A3.834,3.834,0,0,0,22.311,0ZM9.241,20.728H6.178V10.007H9.241Zm0-12.253H6.178V5.412H9.241ZM19.962,20.728H16.9V14.6a1.532,1.532,0,1,0-3.063,0v6.126H10.772V10.007h3.063v.577a6.64,6.64,0,0,1,2.3-.577,4.009,4.009,0,0,1,3.829,4.068Zm0,0" fill="#fff"/>
+                            </svg>                              
+                        </a>
+                </div>
+            </div>
+            
+        </footer>
+          
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script>
+              // pass eye
+
+              const toggleEyeSettings = document.querySelector("#toggleEyeSettings");
+              const studio_settingsPass = document.querySelector("#studio_settingsPass");
+
+                toggleEyeSettings.addEventListener("click", function () {
+                
+                // toggle the type attribute
+                const type = studio_settingsPass.getAttribute("type") === "password" ? "text" : "password";
+                studio_settingsPass.setAttribute("type", type);
+                // toggle the eye icon
+                this.classList.toggle('fa-eye');
+                this.classList.toggle('fa-eye-slash');
+                });
+
+                // 2nd
+                const toggleEyeSettings2 = document.querySelector("#toggleEyeSettings2");
+                const studio_settingsPass2 = document.querySelector("#studio_settingsPass2");
+
+                toggleEyeSettings2.addEventListener("click", function () {
+                
+                // toggle the type attribute
+                const type = studio_settingsPass2.getAttribute("type") === "password" ? "text" : "password";
+                studio_settingsPass2.setAttribute("type", type);
+                // toggle the eye icon
+                this.classList.toggle('fa-eye');
+                this.classList.toggle('fa-eye-slash');
+                });
+
+                // 3rd
+
+                const toggleEyeSettings3 = document.querySelector("#toggleEyeSettings3");
+                const studio_settingsPass3 = document.querySelector("#studio_settingsPass3");
+
+                toggleEyeSettings3.addEventListener("click", function () {
+                
+                // toggle the type attribute
+                const type = studio_settingsPass3.getAttribute("type") === "password" ? "text" : "password";
+                studio_settingsPass3.setAttribute("type", type);
+                // toggle the eye icon
+                this.classList.toggle('fa-eye');
+                this.classList.toggle('fa-eye-slash');
+                });
+                // end
+                
+                
+                 // add preference
+                    let preferenceArray = [];
+                    function add_preference(element) {
+                        if(element.style.backgroundColor=='rgb(139, 184, 192)'){
+                            element.style.backgroundColor='transparent';
+                            let preferenceArray2 = [];
+                            for(let i = 0; i < preferenceArray.length; i++){
+                                if(preferenceArray[i] != element.textContent){
+                                    preferenceArray2.push(preferenceArray[i]);
+                                }
+                            }
+                            preferenceArray = preferenceArray2;
+                        }
+                        else{
+                            
+                            element.style.backgroundColor='#8BB8C0';
+                            preferenceArray.push(element.textContent);
+                        }
+                    }
+            // end
+
+            // upload img
+            const cancelBtn = document.querySelector("#cancel-btn"); 
+            const defaultBtn = document.querySelector("#default-btn"); 
+            const customBtn = document.querySelector("#custom-btn");  
+            const uploadImg = document.querySelector(".uploadImg")
+            function defaultBtnActive() {
+              defaultBtn.click();
+            }
+            defaultBtn.addEventListener("change", function() {
+              const file = this.files[0];
+              if(file) {
+                const reader = new FileReader();
+                reader.onload = function() {
+                  const result = reader.result;
+                  uploadImg.src = result;
+                }
+                cancelBtn.addEventListener("click", function(){
+                  uploadImg.src = " ";                  
+                })                
+                reader.readAsDataURL(file);
+              }
+            })
+
+            // end
+
+            // calenda
+             
+            // end
+        </script>
+    </body>
+</html>
